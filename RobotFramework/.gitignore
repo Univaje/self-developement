@@ -1,0 +1,8 @@
+# ignore idea folder
+.idea/
+# ignore venv folder
+venv/
+#ignore selenium folder
+.selenium/
+#ignore logs folder
+Report/
