@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-11-28T16:23:44.080951" rpa="false" schemaversion="5">
+<suite id="s1" name="Testtwo" source="C:\Users\univa\Documents\self developement\self-developement\RobotFramework\Testcases\testtwo.robot">
+<test id="s1-t1" name="My Second Robot Test" line="6">
+<kw name="Create File" owner="OperatingSystem">
+<msg time="2025-11-28T16:23:44.135570" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\univa\Documents\self developement\self-developement\RobotFramework\Testcases\newfile.txt"&gt;C:\Users\univa\Documents\self developement\self-developement\RobotFramework\Testcases\newfile.txt&lt;/a&gt;'.</msg>
+<arg>newfile.txt</arg>
+<arg>This is a new file created by Robot Framework.</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<status status="PASS" start="2025-11-28T16:23:44.132567" elapsed="0.003003"/>
+</kw>
+<status status="PASS" start="2025-11-28T16:23:44.131555" elapsed="0.005009"/>
+</test>
+<status status="PASS" start="2025-11-28T16:23:44.084949" elapsed="0.051927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testtwo" id="s1" pass="1" fail="0" skip="0">Testtwo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
