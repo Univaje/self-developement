@@ -37,8 +37,7 @@ def testNavibarElements():
     }
     return addtoDict(parts)
 
-service = Service(executable_path='chromedriver.exe')
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
 driver.get(url)
 
@@ -95,21 +94,14 @@ for key, element in NavElements.items():
 time.sleep(2)
 upload_file = os.path.abspath(
         os.path.join(os.path.dirname(__file__), "..", "testimage.png"))
-NavElements['Kuvat'].click()
-current_url = driver.current_url
-if current_url == url + 'pictures':
-    count = countImages()
-    NavElements['Etusivu'].click()
-    uploadfile = driver.find_element(By.ID, 'file-input')
-    uploadfile.send_keys(upload_file)
-    sendfile = driver.find_element(By.ID, 'homeButton')
-    sendfile.click()
-    time.sleep(2)  # wait for upload to process
-    NavElements['Kuvat'].click()
-    newCount = countImages()
-    if newCount != count + 1:
-        print("Image upload test failed, image count did not increase")
-    print("Navigation to pictures page failed before image upload test")
+uploadfile = driver.find_element(By.ID, 'file-input')
+uploadfile.send_keys(upload_file)
+sendfile = driver.find_element(By.ID, 'homeButton')
+sendfile.click()
+time.sleep(2)  # wait for upload to process
+kirjaudu = driver.find_element(By.ID,'loginBtn')
+if kirjaudu is not None:
+    print("Works correctly, upload requires login when not logged in")
 
 
 

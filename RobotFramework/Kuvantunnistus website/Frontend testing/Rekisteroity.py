@@ -28,8 +28,7 @@ def testNavibarElements():
 
 url = 'http://localhost:3000/register'
 
-service = Service(executable_path='chromedriver.exe')
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
 driver.get(url)
 
